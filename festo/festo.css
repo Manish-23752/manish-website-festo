@@ -1,0 +1,255 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .welcome{
+    padding:10px;
+    margin:10px;
+    color:yellow;
+    align-items: center;
+    background-color:black;
+    justify-content: space-around;
+    display: flex;
+    font-size: 40px;
+
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#1b5e20;
+    color: white;
+    
+
+  }
+  .navbar a {
+    color:lightyellow;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  .navbar a:hover {
+    background-color: #575757;
+    border-radius: 6px;
+  }
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:yellow;
+  }
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  .search-bar input {
+    padding: 6px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    
+  }
+
+  /* search button style  */
+
+  .search-button {
+    position: absolute;
+    /* right: 10px;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .search-button:hover{
+    color:blanchedalmond;
+  }
+
+  .login-icon{
+    font-size:24px;
+    font-weight: bold;
+    color:lightyellow;
+    clear:right ;
+  }
+
+  
+  .cart-icon {
+    font-size: 20px;
+    cursor:pointer;
+    color:blue;
+  }
+
+  
+  
+
+  /* PRODUCT LISTING STYLE  */
+.category {
+    padding: 10px;
+}
+.category h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    
+}
+.product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.product-item:hover{
+    
+        transform: translateY(-5px);
+      
+}
+
+
+
+
+
+h1{
+    border: 1px solid #2e7d32;
+    background-color: lightblue;
+    font-size: 20px;
+    font-weight: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-style: bold;
+}
+/* 
+h3{
+    padding:-15px;
+    margin:5px;
+} */
+
+.add-to-cart{
+    color:red;
+    background-color:whitesmoke;
+    font-size: 15px;
+    padding:5px;
+    margin:10px;
+    border:1px solid black;
+}
+
+p{
+    margin:10px;
+}
+
+.add-to-cart:hover{
+    color:red;
+    /* background-color: wheat; */
+    background-color: #ffe4b5;
+}
+/* footer style code  */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e7d32;
+    color: lightyellow;
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-section {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #c5e1a5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: lightyellow;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #c5e1a5;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 22px;
+    color:lightyellow;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c5e1a5;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #1b5e20;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
